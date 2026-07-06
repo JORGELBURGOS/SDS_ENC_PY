@@ -1,0 +1,13 @@
+SDS_ENC_PY — Sudameris Seguros
+
+Google Sheet:
+https://docs.google.com/spreadsheets/d/1qQ1h0I-5Y2s_aWaRktV0R-w0URwu4qacbQY76kd3Y9Q/edit
+
+Apps Script Web App:
+https://script.google.com/macros/s/AKfycbzMkmGGvF6glooVb5L2mj_sArem5CbE9NjYlwj0ZrlKvLJgokEPdRRp5jNr3WOAqMYU/exec
+
+GitHub repo:
+SDS_ENC_PY
+
+Vercel:
+Conectar este repo y desplegar como proyecto estático.

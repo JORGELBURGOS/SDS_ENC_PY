@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Diagnóstico Estratégico Sudameris Seguros</title>
+  <meta name="description" content="Encuesta de diagnóstico de madurez de gestión para Sudameris Seguros." />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+
+<body>
+  <header class="hero">
+    <div class="hero__content">
+      <div class="eyebrow">Sudameris Seguros · Diagnóstico de madurez</div>
+      <h1>Diagnóstico Estratégico Sudameris Seguros</h1>
+      <p>
+        Encuesta para relevar capacidades de gestión estratégica, técnica, operativa,
+        comercial, financiera y regulatoria. Los KPIs se usan como referencia consultiva
+        para orientar el análisis y los workshops.
+      </p>
+    </div>
+  </header>
+
+  <main class="shell">
+    <section class="panel setup">
+      <div class="field">
+        <label for="teamSelect">Gerencia / Equipo</label>
+        <select id="teamSelect"></select>
+      </div>
+
+      <div class="field">
+        <label for="personSelect">Interlocutor</label>
+        <select id="personSelect"></select>
+      </div>
+
+      <div class="summary-card">
+        <div>
+          <span class="summary-label">Avance</span>
+          <strong id="progressText">0 / 0</strong>
+        </div>
+        <div>
+          <span class="summary-label">Promedio</span>
+          <strong id="averageText">–</strong>
+        </div>
+        <div>
+          <span class="summary-label">Estado</span>
+          <strong id="statusText">Pendiente</strong>
+        </div>
+      </div>
+    </section>
+
+    <section class="panel intro">
+      <h2 id="teamTitle">Seleccioná una gerencia</h2>
+      <p id="teamSpeech"></p>
+
+      <div class="scale">
+        <div><strong>1</strong><span>No estructurado</span></div>
+        <div><strong>2</strong><span>Definido inicial</span></div>
+        <div><strong>3</strong><span>Medido</span></div>
+        <div><strong>4</strong><span>Gestionado</span></div>
+        <div><strong>5</strong><span>Integrado / predictivo</span></div>
+      </div>
+    </section>
+
+    <section class="panel chart-panel">
+      <div class="chart-header">
+        <div>
+          <h2>Foto de madurez</h2>
+          <p>Vista rápida de las respuestas cargadas para esta gerencia/interlocutor.</p>
+        </div>
+        <button id="downloadCsvBtn" class="btn btn-secondary" type="button">Exportar CSV</button>
+      </div>
+      <canvas id="radarCanvas" width="720" height="360" aria-label="Radar de madurez"></canvas>
+    </section>
+
+    <section id="questions" class="questions"></section>
+
+    <section class="actions">
+      <button id="resetBtn" class="btn btn-danger" type="button">Reiniciar respuestas</button>
+      <button id="sendBtn" class="btn btn-primary" type="button">Enviar respuestas al Google Sheet</button>
+    </section>
+
+    <section id="message" class="message" aria-live="polite"></section>
+  </main>
+
+  <footer class="footer">
+    <span>Sistema de diagnóstico consultivo · Sudameris Seguros</span>
+  </footer>
+
+  <script src="./config.js"></script>
+  <script src="./app.js"></script>
+</body>
+</html>
