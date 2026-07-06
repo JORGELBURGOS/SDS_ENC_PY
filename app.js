@@ -123,7 +123,7 @@ function renderQuestions() {
           <div>
             <h3>${escapeHtml(item.q || item.question || "")}</h3>
             <p class="example"><strong>Ejemplo aclaratorio:</strong> ${escapeHtml(item.ej || item.example || "")}</p>
-            <p class="kpi-ref"><strong>KPI de referencia consultiva:</strong> ${escapeHtml(item.kpi || "")}</p>
+            <!-- KPI de referencia oculto para el encuestado. Se conserva en data.json y se envía al Google Sheet. -->
             <div class="score-row" role="group" aria-label="Puntaje pregunta ${n}">
               ${[1, 2, 3, 4, 5].map(score => `
                 <button
